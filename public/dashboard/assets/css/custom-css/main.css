@@ -1,0 +1,399 @@
+/* index page css */
+.table-striped-custom {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ظل ناعم حول الجدول */
+}
+
+.table-striped-custom tbody tr:nth-of-type(odd) {
+    background: linear-gradient(135deg, #32cd32, #66cdaa); /* تدرج أخضر ناعم وجذاب */
+    color: #fff; /* لون نص فاتح ليتناسب مع الخلفية */
+}
+
+.table-striped-custom tbody tr:nth-of-type(even) {
+    background: #e8f5e9; /* لون خلفية فاتح ومريح */
+    color: #333; /* لون نص غامق */
+}
+
+.table-striped-custom tbody tr:hover {
+    background-color: #c8e6c9; /* لون هادئ عند التمرير */
+    transition: background-color 0.3s ease;
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border: 1px solid #a5d6a7; /* خطوط فاتحة لحدود الجدول */
+}
+
+.table th {
+    background: linear-gradient(135deg, #388e3c, #2e7d32); /* تدرج لوني هادئ للرأس */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #2e7d32;
+    letter-spacing: 0.05rem; /* مسافات بين الحروف لإضفاء جمالية */
+}
+
+.table td {
+    background: #ffffff; /* خلفية بيضاء للخلايا */
+    color: #333; /* لون النص */
+    border: 1px solid #e8f5e9;
+    transition: background 0.3s ease; /* تأثير عند التمرير */
+}
+
+.table td:hover {
+    background: #c8e6c9; /* لون مريح عند التمرير فوق الخلايا */
+}
+
+/* تأثيرات إضافية للجدول */
+.table {
+    border-radius: 1rem; /* حواف ناعمة للجدول */
+    overflow: hidden; /* لضمان عدم خروج المحتويات عن الحدود */
+}
+
+.btn-custom1 {
+    background: linear-gradient(135deg, #388e3c, #66bb6a);
+    color: white;
+    font-weight: bold;
+    font-size: 2.9rem;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+    margin: 70px;
+}
+
+.btn-custom1:hover {
+    background-color: #81c784;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.pagination-custom .pagination {
+    justify-content: center;
+}
+
+.pagination-custom .page-item .page-link {
+    color: #66bb6a;
+}
+
+.pagination-custom .page-item.active .page-link {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+}
+
+.alert-danger-custom {
+    background-color: #e8f5e9;
+    color: #388e3c;
+    font-weight: bold;
+    border: 1px solid #388e3c;
+}
+
+.custom-margin {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.custom-btn-space {
+    margin-left: 0.5rem;
+}
+
+.btn {
+    border-radius: 30px;
+    font-size: 1rem; 
+    padding: 12px 24px; 
+}
+
+.btn:hover, .btn:focus {
+    box-shadow: none; 
+    outline: none; 
+    text-decoration: none; 
+}
+
+/* create page  */
+.container-custom {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.card-custom {
+    background:#fff;
+    color: #fff;
+    transition: background 0.5s ease;
+    border-radius:20px;
+
+}
+
+.card-body-custom {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-header{
+    font-size: 30px;
+    color: #2e7d32;
+}
+.btn-custom {
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    background-color:#E4E7EC;
+}
+
+.btn-custom:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color:#198754;
+}
+
+.btn-custom-reset {
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    background-color:#E4E7EC;
+}
+
+.btn-custom-reset:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color:#DC3545;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #fff;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #ffc107, #e0a800);
+    color: #fff;
+}
+
+.card-title {
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px #218838;
+    font-size: 24px;
+    text-align:center;
+    margin-top: 40px;
+    
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+/*  edit page css */
+
+.container-custom2 {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    min-height: 400px;
+    background-color: #eaeaea;
+    box-shadow: 0 12px 24px rgba(255, 164, 164, 0.15);
+}
+
+.card-custom {
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    color: #333;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #28a745, #218838);
+    border-radius: 0 0 1.5rem 1.5rem;
+    box-shadow: inset 0 -3px 12px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.card-body:hover {
+    background: linear-gradient(135deg, #28a745, #218838);
+}
+
+.btn-custom2 {
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    background-color: #E4E7EC;
+    color: #fff;
+}
+
+.btn-custom2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #198754;
+    color: #fff;
+}
+
+.btn-custom2-reset {
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    background-color: #E4E7EC;
+    color: #fff;
+}
+
+.btn-custom2-reset:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #DC3545;
+    color: #fff;
+}
+
+.btn-custom2-go {
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    background-color: #E4E7EC;
+    color: #fff;
+}
+
+.btn-custom2-go:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #6C757D;
+    color: #fff;
+}
+
+.card-title {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 32px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/*  show page css */
+
+.card-custom2 {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.card-header {
+    background: #fff;
+    color: #000000;
+    text-align: center;
+    padding: 2rem;
+}
+
+.card-body2 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-custom3 {
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 12px 24px;
+    color: #fff;
+}
+
+.btn-custom3:hover, .btn-custom3:focus {
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+/* message page css */
+
+@keyframes bounceIcon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes flashText {
+    0%, 100% { color: white; }
+    50% { color: #ffdd57; }
+}
+
+@keyframes scaleUp {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.btn-custom2 {
+    background-color: #28a745; /* اللون الأخضر */
+    color: #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-custom2:hover {
+    background-color: #218838; /* الأخضر الداكن */
+    transform: scale(1.05);
+}
+
+.btn-custom2-go {
+    background-color: #28a745; /* الأخضر */
+    color: #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom2-go:hover {
+    background-color: #218838; /* الأخضر الداكن */
+}
+
+.btn-custom2-reset {
+    background-color: #ff6f61; /* مشمشي */
+    color: #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom2-reset:hover {
+    background-color: #e65c50; /* مشمشي داكن */
+}
+
+/* إضافة مسافة بين الأزرار */
+.button-group a {
+    margin-left: 50px;
+}

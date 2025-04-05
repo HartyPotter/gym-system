@@ -1,0 +1,6 @@
+// payment => paymob 
+1- بعمل اكونت paymob => بدخل الرقم 
+// run commend 
+composer require islam-alsayed/paymob
+// app
+//

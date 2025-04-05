@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: laravel_app
+    restart: unless-stopped
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    networks:
+      - laravel_network
+
+  db:
+    image: mysql:8
+    container_name: laravel_db
+    restart: unless-stopped
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
+      - MYSQL_DATABASE=gym_system
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_PASSWORD=
+    ports:
+      - "3306:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - laravel_network
+
+volumes:
+  dbdata:
+
+networks:
+  laravel_network:

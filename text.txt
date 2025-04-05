@@ -1,0 +1,13 @@
+project Gym System 
+
+1- install composer
+2- install xampp
+3- write command => composer update 
+4- create database in phpmySQL example => gym_system
+5- command => copy .env.example .env 
+6- php artisan migarte:fresh --seed
+7- php artisan serve
+8- install npm  =>npm install
+9- command => npm run dev  => to appeare register and login view 
+10- command  to appeare image  in web => php artisan storage:link 
+11- to send notification write command =>  php artisan queue:work
